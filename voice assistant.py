@@ -43,22 +43,13 @@ dt= datetime.datetime.now()
 
 
 #all the email_id in contacts are here
-gmail_ids={'chetan': 'Chetanchawlaofficial@gmail.com',
-           'garima' : 'kgarima0808@gmail.com',
-           'arshit' : 'karshit48@gmail.com'
+gmail_ids={
+    #write email id of the person you want to send mails
 
         }
 #all the contacts 
-contacts={'chetan' : '+919319888883 ',
-          'ishan' : '+918607353361',
-          'ankit' : '+919996458866',
-          'anushk': '+918528701871',
-          'anjali arora':'+917009921756',
-          'bhumika' : '+919896633417',
-          'pooja' : '+918569874194',
-          'anjali kumari':'+916284402210',
-          'mummy':'+918708997483',
-          'papa':'+919255121931',
+contacts={
+    #write phone numbers of person you want to send whatsapp messages
 }        
 
 
@@ -220,8 +211,8 @@ def send_mail(to,content) :
     .login(): it is used to authenticate the email and app_password    
     '''
     print('trying to send.......')
-    senders_id='arshitk643@gmail.com'
-    app_password='hmwsthcbxmbbvtio'
+    senders_id='your id'
+    app_password='app password'
     try:
         server=smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
